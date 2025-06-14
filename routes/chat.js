@@ -19,8 +19,15 @@ router.post('/chat', async (req, res) => {
       type: 'text',
       response: `
       The database contains the following tables:
-      1. **employee** – Stores info about employees (name, salary, age, gender, department).
-      2. **department** – Stores departments (name, location).`
+      1. **Categories** – Stores info about Pokemon Categories (ID, Name).
+      2. **Countries** – Stores info about Countries (Id, Name).
+      3. **Owners** – Stores info about Pokemon Owners (Id, FirstName, LastName, Gym. CountryId).
+      4. **Pokemon** – Stores info about Pokemons (Id, Name, BirthDate).
+      5. **PokemonCategories** – Stores info about Pokemons and their Categories (PokemonId, CategoryId).
+      6. **PokemonOwners** – Stores info about Pokemon Owners (Id, OwnerId).
+      7. **Reviewers** – Stores info about Pokemon Reviewers (Id, Title, Text, Rating, PokemonId).
+      8. **Reviews** – Stores info about Pokemon Reviews (Id, Title, Text, Rating, PokemonId).
+      `
     });
   }
 
